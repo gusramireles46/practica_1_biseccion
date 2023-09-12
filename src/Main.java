@@ -31,27 +31,27 @@ public class Main {
 
         // Método de bisección
         int iteracion = 1;
-        double c;
+        double x;
         double erp;
 
         System.out.println("\ni   a       (a+b)/2        b       f(a)       f((a+b)/2)       f(b)       erp");
 
         do {
-            c = (a + b) / 2.0;
+            x = (a + b) / 2.0;
             erp = Math.abs((b - a) / 2.0);
 
-            System.out.printf("%d   %.5f   %.5f   %.5f   %.5f   %.5f   %.5f   %.5f%n", iteracion, a, c, b, f(a), f(c), f(b), erp);
+            System.out.printf("%d   %.5f   %.5f   %.5f   %.5f   %.5f   %.5f   %.5f%n", iteracion, a, x, b, f(a), f(x), f(b), erp);
 
-            if (f(a) * f(c) < 0) {
-                b = c;
+            if (f(a) * f(x) < 0) {
+                b = x;
             } else {
-                a = c;
+                a = x;
             }
 
             iteracion++;
         } while (erp > erpMax);
 
-        System.out.println("\nResultado aproximado: x = " + c);
+        System.out.println("\nResultado aproximado: x = " + x);
     }
 
     public static double f(double x) {
