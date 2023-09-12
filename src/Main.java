@@ -36,8 +36,8 @@ public class Main {
         System.out.println("\ni   a       (a+b)/2        b       f(a)       f((a+b)/2)       f(b)       erp");
 
         do {
-            x = (a + b) / 2.0;
-            erp = Math.abs((b - a) / 2.0);
+            x = (a + b) / 2;
+            erp = Math.abs((b - a) / 2);
 
             System.out.printf("%d   %.5f   %.5f   %.5f   %.5f   %.5f   %.5f   %.5f%n", iteracion, a, x, b, f(a), f(x), f(b), erp);
 
