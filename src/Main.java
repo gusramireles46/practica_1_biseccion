@@ -29,7 +29,6 @@ public class Main {
         System.out.print("Ingrese el valor máximo de error (Erp): ");
         erpMax = sc.nextDouble();
 
-        // Método de bisección
         int iteracion = 1;
         double x;
         double erp;
